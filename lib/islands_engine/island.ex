@@ -48,7 +48,7 @@ defmodule IslandsEngine.Island do
     end
   end
 
-  def forestand?(island), do: MapSet.equal?(island.coordinates, island.hit_coordinates)
+  def forested?(island), do: MapSet.equal?(island.coordinates, island.hit_coordinates)
 
   def types(), do: [:attol, :got, :l_shape, :s_shape, :square]
 end
